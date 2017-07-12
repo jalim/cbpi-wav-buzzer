@@ -7,7 +7,7 @@ class Buzzer(object):
     def beep(self):
         import pygame
         pygame.mixer.init()
-        pygame.mixer.music.load("./modules/plugins/beeper/beep.wav")
+        pygame.mixer.music.load("./modules/plugins/cbpi-wav-buzzer/beep.wav")
         pygame.mixer.music.play()
         while pygame.mixer.music.get_busy() == True:
             continue
